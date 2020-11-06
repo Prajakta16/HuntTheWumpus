@@ -1,6 +1,6 @@
-# HOMEWORK 3 : BUILDING MAZE
+# BUILDING MAZE FOR HUNT THE WOMPUS
 
-###DESCRIPTION
+### DESCRIPTION
 A perfect maze is the simplest type of maze for a computer to generate and solve. It is defined as a maze which has one and only one path from any point in the maze to any other point in the maze. This means that the maze has no inaccessible sections, no circular paths, no open areas.
 Each cell in the grid represents a location in the maze that has a potential exit to the north, south, east, and west. One way to look at the perfect maze is that each location is a hallway that twists and turns its way from one place to another. The challenge for this type of maze is to find the direct path from one place (the pink square) to another (the blue one).
 
@@ -16,7 +16,7 @@ There are a number of algorithms for building perfect mazes including Kruskal's 
 <br>
 To build a maze, we will need to specify the number of rows, the number of columns, and the number of walls remaining in the maze (this is our constraint). Given the number of locations in the maze as n = numberOfRows x numberOfColumns, the remaining number of walls must be between 0 (a maze where all locations are rooms with 4 doors) and numberOfEdges - n + 1 (a perfect maze). In this video, we demonstrate how to modify Kruskal's algorithm to build these mazes:
 
-####REQUIREMENT
+#### REQUIREMENT
 Design and implement the interfaces/classes to generate perfect mazes, room mazes, and wrapping room mazes in a way that captures their similarities and accurately represents the relevant data. For the purposes of this assignment, the maze also has the following requirements:
 
 1. There is one goal location cell
@@ -50,10 +50,7 @@ Design and implement the interfaces/classes to generate perfect mazes, room maze
 
 10. Your program should then be able to demonstrate a player navigating within the maze, collecting gold, being robbed, and reaching the goal location (see details below for specific scenarios)
 
-###SUBMISSION SUMMARY
-In this homework I have designed and implemented a solution that can be used to generate a random maze and let a player find a path through the maze.
-
-###HOW TO USE
+### HOW TO USE
 All the code is in src/.
 All the tests are in be test/.
 Original, revised design document, the JAR file, example runs of program are in res/.
@@ -61,13 +58,13 @@ Original, revised design document, the JAR file, example runs of program are in 
 The program can be run using the JAR file within the res/ folder in the zipped file.
 1. Unzip submission folder
 2. Go to the to res/ folder using command prompt
-3. Execute "java -jar HW3Maze.jar"
+3. Execute "java -jar HuntTheWompus.jar"
 4. Program should successfully execute
 
-###PARTS COMPLETE
+### PARTS COMPLETE
 All the parts and requirements of the problem statement are completed and the tests have a good coverage of all program features.
 
-###ASSUMPTIONS
+### ASSUMPTIONS
 1. Only the following maze Types are being accounted in the Project
   Perfect, Imperfect
 2. Maze may or may not be wrapping
@@ -80,7 +77,7 @@ All the parts and requirements of the problem statement are completed and the te
 8. Player loses 10% gold on entering room with thief
 9. Player wins on entering room defined as goal
 
-###DESIGN AND JUSTIFICATION
+### DESIGN AND JUSTIFICATION
 A maze interface will make the code more reusable and efficient. All the features that required merging of Perfecta and Imperfect maze are merged in maze abstract class. Maze Builder has been used that will take all inputs of the expected maze that should be created and will efficiently create the required maze.
 
 We have Game as well as Person class other than maze. Person will be playing the maze. Game class encapsulates the maze and the steps of the player to solve the maze and give additional methods to move and collect gold and reach the destination in the maze. 
