@@ -1,0 +1,5 @@
+HUNT_THE_WUMPUS:icons/hunt_the_wumpus
+GET_GOLD_REACH_GOAL:icons/get_gold_reach_goal
+SHOOT_THE_LION:icons/shoot_the_lion
+DESTROY_ASTEROID:icons/destroy_asteroid
+CATCH_THE_SHARK:catch_the_shark
